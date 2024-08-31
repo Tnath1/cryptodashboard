@@ -1,0 +1,13 @@
+@import "../../styles.scss";
+
+
+.content {
+    overflow-x: hidden;
+    // width: 100%;
+    max-width: 1154px;
+    margin-left: 286px;
+    background-color: $bg-second;
+    height: 100vh;
+    margin-top: 75px;
+    // transition: all .2s;
+}
