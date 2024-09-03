@@ -1,0 +1,72 @@
+@import "../../styles.scss";
+
+section.row-2 {
+    display: grid;
+    grid-template: 1fr / auto repeat(4, minmax(164px, 200px));
+    gap: 24px;
+    width: 100%;
+    margin-top: 45px;
+    padding-right: 0px;
+
+    .exchange-calculator {
+        min-width: 352px;
+        height: 100%;
+    }
+
+    .box {
+        border-radius: 10px;
+        background-color: $bg-second;
+        box-shadow: var(--c-box-shadow);
+        padding: 20px;
+    }
+
+
+    .exchange-calculator{
+        .exchange-calculator__title {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .divider {
+            height: 1px;
+            width: 100%;
+            background: $border-primary;
+        }
+
+        .exchange-calculator .amounts {
+            width: 100%;
+            display: grid;
+            grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+            row-gap: 18px;
+            font-weight: 500;
+        }
+
+
+        .exchange-calculator .btn-primary {
+            margin-top: 20px;
+            width: 100%;
+            padding: 8.5px 0;
+            font-weight: 500;
+            font-size: 20px;
+        }
+        
+        .btn-primary {
+            border-radius: 6px;
+            background: var(--gradient-primary);
+            box-shadow: var(--c-box-shadow-btn);
+            color: var(--c-text-active);
+        }
+        button {
+            background: transparent;
+            cursor: pointer;
+        }
+        button, input, textarea, select {
+            outline: none;
+            border: 0px;
+            font-family: inherit;
+        }
+
+
+
+    }
+}

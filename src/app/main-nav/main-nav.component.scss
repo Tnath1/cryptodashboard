@@ -1,6 +1,14 @@
 @import "../../styles.scss";
 
 .header {
+  position: fixed;
+
+  max-width: 1154px;
+  width: 100%;
+  padding: 15px 20px;
+  box-shadow:  0 10px 20px 0 rgba(0, 0, 0, .2);
+  z-index: 9999;
+  transition: max-width 0.2s;
   top: 0;
   background-color: $bg-second;
   height: 75px;

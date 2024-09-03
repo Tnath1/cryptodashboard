@@ -7,19 +7,20 @@
   margin-left: 286px;
   background-color: $bg-primary;
   height: 100vh;
-  // margin-top: 75px;
-  // transition: all .2s;
+
 
   div.main-content {
-    div.container {
-      margin: 24px 0 24px 24px;
-      color: white;
-      // border:  1px solid;
+    padding: 0 24px 50px;
 
+
+    div.container {
+      margin-top: 6.5rem;
+      color: white;
+
+   
       h2 {
         font-size: 28px;
         margin-bottom: 25px;
-        // color: white;
       }
     }
   }
