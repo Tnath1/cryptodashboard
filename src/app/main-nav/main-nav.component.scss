@@ -12,7 +12,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-    
 
     .search {
       display: flex;
@@ -89,6 +88,11 @@
           box-shadow: 6px 7px 48px -1px #223c5036;
           transition: all cubic-bezier(0.3, 1.5, 0.7, 1) 0.3s;
 
+          &.dark {
+            left: calc(100% - 20px);
+            // filter: brightness(0) invert(0);
+          }
+
           img {
             max-width: 100%;
           }
@@ -101,7 +105,7 @@
       margin-left: 15px;
       cursor: pointer;
       margin-right: 35px;
-  }
+    }
 
     .b-form {
       border-radius: 6px;
