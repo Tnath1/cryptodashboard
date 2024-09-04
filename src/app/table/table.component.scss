@@ -1,0 +1,153 @@
+@import "../../styles.scss";
+
+.transactions {
+  margin-top: 40px;
+
+  .table-transactions {
+    overflow: auto;
+    margin: 20px -24px 0;
+    padding: 0 24px 25px;
+
+    tr {
+      padding: 19px 0;
+      margin: 0 0 -1px;
+    }
+
+    .box {
+      border-radius: 10px;
+      background: $bg-second;
+      box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      margin-top: 5px;
+    }
+    td:nth-child(3) {
+      color: #3290ff;
+      margin-left: 25px;
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+    }
+
+    td:nth-child(2) {
+      color: #3290ff;
+      margin-left: 15px;
+    }
+
+    thead tr,
+    tbody tr {
+      min-width: 700px;
+      width: 100%;
+      display: grid;
+      grid-template-columns:
+        minmax(150px, 400px) minmax(70px, 400px) minmax(130px, 400px)
+        minmax(100px, 400px);
+      align-items: center;
+
+   
+
+      .status-days {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 5px;
+        margin-left: 2.5rem;
+        width: 100%;
+
+        h5 {
+          font-size: 14px;
+          font-weight: 400;
+        }
+
+        div {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          .status-days__blue {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: fit-content;
+            height: 17px;
+            border-radius: 1px;
+            background: #0d0d1f;
+            padding: 0 4px;
+            color: #fefefe;
+          }
+        }
+      }
+
+      .icon-two-row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-left: 10px;
+
+        .icon-two-row__name {
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          font-size: 14px;
+          font-weight: 400;
+          gap: 5px;
+
+          h5 {
+            font-size: 14px;
+            font-weight: 400;
+          }
+
+          span {
+            color: $text-color;
+          }
+        }
+      }
+    }
+
+    th {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding-left: 48px;
+      text-align: left;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    table {
+      display: table;
+      border-collapse: separate;
+      box-sizing: border-box;
+      text-indent: initial;
+      unicode-bidi: isolate;
+      border-spacing: 2px;
+      border-color: gray;
+
+      thead tr,
+      tbody tr {
+        padding-left: 48px;
+      }
+
+      thead {
+        display: table-header-group;
+        vertical-align: middle;
+        unicode-bidi: isolate;
+        border-color: $border-primary;
+
+        tr {
+          padding: 19px 0;
+          margin: 0 0 -1px;
+        }
+
+        .box {
+          border-radius: 10px;
+          background: $bg-second;
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+          padding: 20px;
+        }
+      }
+    }
+  }
+}
