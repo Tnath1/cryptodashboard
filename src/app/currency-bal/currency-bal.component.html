@@ -2,8 +2,8 @@
   <!-- Display Total Balance -->
 
   <div class="card-content">
-    <h3>{{ currencyData[0]?.label }}</h3>
-    <h4>{{ currencyData[0]?.formatted }}</h4>
+    <h3>{{ currencyData[0].label }}</h3>
+    <h4>{{ currencyData[0].formatted }}</h4>
 
     <div class="divider"></div>
     <div class="amount__line one"></div>
@@ -23,16 +23,16 @@
           ></path>
         </g>
       </svg>
-      <p>{{ currencyData[0]?.coin }}</p>
+      <p>{{ currencyData[0].coin }}</p>
     </div>
-    <p class="amount-figure">${{ currencyData[0]?.coinAmount }}</p>
+    <p class="amount-figure">${{ currencyData[0].coinAmount }}</p>
   </div>
 
   <!-- Display Crypto -->
 
   <div class="card-content">
-    <h3>{{ currencyData[1]?.label }}</h3>
-    <h4>{{ currencyData[1]?.formatted }}</h4>
+    <h3>{{ currencyData[1].label }}</h3>
+    <h4>{{ currencyData[1].formatted }}</h4>
     <div class="divider"></div>
     <div class="amount__line dual"></div>
 
@@ -60,16 +60,16 @@
         <path fill="#193DBE" d="m9.88 12.378 4.166-2.375L9.88 8.176z"></path>
         <path fill="#C5CAF4" d="m5.715 10.003 4.165 2.375V8.176"></path>
       </svg>
-      <p>{{ currencyData[1]?.coin }}</p>
+      <p>{{ currencyData[1].coin }}</p>
     </div>
-    <p class="amount-figure">${{ currencyData[1]?.coinAmount }}</p>
+    <p class="amount-figure">${{ currencyData[1].coinAmount }}</p>
   </div>
 
   <!-- Display Fiat -->
 
   <div class="card-content">
-    <h3>{{ currencyData[2]?.label }}</h3>
-    <h4>{{ currencyData[2]?.formatted }}</h4>
+    <h3>{{ currencyData[2].label }}</h3>
+    <h4>{{ currencyData[2].formatted }}</h4>
     <div class="divider"></div>
     <div class="amount__line third"></div>
 
@@ -88,9 +88,9 @@
         </g>
       </svg>
 
-      <p>{{ currencyData[2]?.coin }}</p>
+      <p>{{ currencyData[2].coin }}</p>
     </div>
-    <p class="amount-figure">${{ currencyData[2]?.coinAmount }}</p>
+    <p class="amount-figure">${{ currencyData[2].coinAmount }}</p>
   </div>
 
   <!-- Display USD Coin -->
@@ -119,8 +119,8 @@
           </g>
         </g>
       </svg>
-      <p>{{ currencyData[3]?.coin }}</p>
+      <p>{{ currencyData[3].coin }}</p>
     </div>
-    <p class="amount-figure">${{ currencyData[3]?.coinAmount }}</p>
+    <p class="amount-figure">${{ currencyData[3].coinAmount }}</p>
   </div>
 </section>
