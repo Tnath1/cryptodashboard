@@ -148,10 +148,21 @@ section.row-2 {
     .txt-bottom-container {
      position: relative;
     //  margin-top: 50px;
+    padding-top: 10px;
      z-index: 10;
      font-weight: 500;
      margin-top: 30px;
     //  border: 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+
+    h4:nth-of-type(2),
+    h4:nth-of-type(4) {
+      font-size: 18px; 
+    }
 
      img {
       position: absolute;
@@ -167,6 +178,7 @@ section.row-2 {
     margin-top: 10px;
     line-height: 30px;
     color: $text-color;
+    font-size: 20px;
   }
     
 
