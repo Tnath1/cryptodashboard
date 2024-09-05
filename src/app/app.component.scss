@@ -1,39 +1,90 @@
+@import "../styles.scss";
+
 // .main{
 //   display: flex;
 //   justify-content: center;
 //   align-items: center;
 // }
 
-
-
 main.container {
-    max-width: 1440px;
-    margin: 0 auto;
-    font-family: "Poppins" sans-serif ;
-    // padding: 20px;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Poppins" sans-serif;
+  // padding: 20px;
 
-    div.app-content {
-        overflow-y: auto; /* Ensure vertical scrolling is enabled */
-        
-        /* Custom scrollbar styles for the y-axis */
-        &::-webkit-scrollbar {
-          width: 10px; /* Width of the vertical scrollbar */
-        }
-      
-        &::-webkit-scrollbar-track {
-          background: blue; /* Track color */
-        }
-      
-        &::-webkit-scrollbar-thumb {
-          background: linear-gradient(red, blue); /* Thumb gradient color */
-          border-radius: 10px; /* Rounded scrollbar thumb */
-        }
-      
-        /* Firefox scrollbar styles */
-        scrollbar-width: thin;
-        scrollbar-color: linear-gradient(red, blue) blue;
-      }
-      
+  .light-theme {
+    background-color: white;
+    color: black;
 
+    * {
+      background-color: inherit;
+      color: inherit;
+    }
   }
+
+  /* Dark Theme */
+  .dark-theme {
+    background-color: $bg-primary;
+    color: white;
+
+    * {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+
+  div.app-content {
+
+
+
+
+    .light-theme {
+      background-color: white;
+      color: black;
   
+      * {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
+  
+    /* Dark Theme */
+    .dark-theme {
+      background-color: $bg-primary;
+      color: white;
+  
+  
+      * {
+        background-color: inherit;
+        color: inherit;
+      }
+    }
+
+
+
+
+
+
+
+
+    overflow-y: auto; /* Ensure vertical scrolling is enabled */
+
+    /* Custom scrollbar styles for the y-axis */
+    &::-webkit-scrollbar {
+      width: 10px; /* Width of the vertical scrollbar */
+    }
+
+    &::-webkit-scrollbar-track {
+      background: blue; /* Track color */
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: linear-gradient(red, blue); /* Thumb gradient color */
+      border-radius: 10px; /* Rounded scrollbar thumb */
+    }
+
+    /* Firefox scrollbar styles */
+    scrollbar-width: thin;
+    scrollbar-color: linear-gradient(red, blue) blue;
+  }
+}

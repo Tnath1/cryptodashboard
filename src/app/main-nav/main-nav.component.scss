@@ -58,6 +58,11 @@
     }
 
     .user {
+
+      img{
+        border-radius: 50%;
+      }
+      
       min-width: fit-content;
       display: flex;
       align-items: center;
