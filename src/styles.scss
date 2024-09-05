@@ -9,7 +9,7 @@ $border-primary: rgba(254, 254, 254, 0.05);
 $b: #fefefe;
 // $text-color-second: #9baeca;
 $text-color: #9baeca;
-$green-light:#00bc84;
+$green-light: #00bc84;
 $d: #fefefe;
 $e: rgba(254, 254, 254, 0.5);
 $f: #0d0d1f;
@@ -20,11 +20,36 @@ $i: #151429;
 
 /* Global styles */
 body {
+
+
+  .light-theme {
+    background-color: white;
+    color: black;
+
+    * {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+
+  /* Dark Theme */
+  .dark-theme {
+    background-color: $bg-primary;
+    color: white;
+
+
+    * {
+      background-color: inherit;
+      color: inherit;
+    }
+  }
+
   background-color: $bg-primary;
 
-  ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-    color:   white;
-}
+  ::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    color: white;
+  }
 
   ::-webkit-scrollbar {
     width: 4px;
@@ -52,6 +77,36 @@ body {
   height: 100%;
   font-family: Arial, sans-serif;
   color: $text-color;
+
+  /* styles.scss */
+
+  /* Light Theme */
+  // .light-theme {
+  //   background-color: white;
+  //   color: black;
+
+  //   * {
+  //     background-color: inherit;
+  //     color: inherit;
+  //   }
+  // }
+
+  // /* Dark Theme */
+  // .dark-theme {
+  //   background-color: $bg-primary;
+  //   color: white;
+
+
+  //   * {
+  //     background-color: inherit;
+  //     color: inherit;
+  //   }
+  // }
+
+
+
+
+
 }
 
 /* Reset styles */

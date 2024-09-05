@@ -1,27 +1,69 @@
 @import "../../styles.scss";
 
+// .content {
+//   overflow-x: hidden;
+//   // width: 100%;
+//   max-width: 1154px;
+//   margin-left: 286px;
+//   background-color: $bg-primary;
+//   height: 100vh;
+
+
+//   div.main-content {
+//     padding: 0 24px 50px;
+
+
+//     div.container {
+//       margin-top: 6.5rem;
+//       color: white;
+
+   
+//       h2 {
+//         font-size: 28px;
+//         margin-bottom: 25px;
+//       }
+//     }
+//   }
+// }
+
+
+
 .content {
+  // overflow-y: auto;
   overflow-x: hidden;
-  // width: 100%;
   max-width: 1154px;
   margin-left: 286px;
   background-color: $bg-primary;
-  height: 100vh;
+  height: 100vh;  
+  max-height: 100vh;  
 
 
-  div.main-content {
-    padding: 0 24px 50px;
+  .light-theme {
+    background-color: white ;
+    color: black ;
+  }
+
+  /* Dark Theme */
+  .dark-theme {
+    background-color: $bg-primary;
+    color: white;
+  }
 
 
-    div.container {
-      margin-top: 6.5rem;
-      color: white;
+}
 
-   
-      h2 {
-        font-size: 28px;
-        margin-bottom: 25px;
-      }
-    }
+.main-content {
+  padding: 0 24px 50px;
+}
+
+.container {
+  margin-top: 6.5rem;
+  color: white;
+  height: auto;               
+  overflow: unset;  
+
+  h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
   }
 }
