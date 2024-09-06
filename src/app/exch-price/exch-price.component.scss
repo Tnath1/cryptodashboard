@@ -1,4 +1,4 @@
-@import "../../styles.scss";
+// @import "../../styles.scss";
 
 section.row-2 {
   display: grid;
@@ -8,7 +8,7 @@ section.row-2 {
   margin-top: 45px;
   padding-right: 0px;
   .box {
-    border: 1px solid $border-primary;
+    border: 1px solid var(--border-primary);
   }
 
   .exchange-calculator {
@@ -18,8 +18,8 @@ section.row-2 {
 
   .box {
     border-radius: 10px;
-    background-color: $bg-second;
-    box-shadow: var(--c-box-shadow);
+    background-color: var(--bg-second-color);
+    // box-shadow: var(--c-box-shadow);
     padding: 20px;
   }
 
@@ -33,18 +33,18 @@ section.row-2 {
 
       .dropdown {
         display: flex;
-        color: white;
+        color: var(--white);
         gap: 7px;
         padding: 10px;
         cursor: pointer;
         position: relative;
 
         .dropdown__icon-arrow {
-          transition: transform 0.3s ease; // Smooth transition for rotation
+          transition: transform 0.3s ease;
         }
 
         .dropdown__icon-arrow.rotated {
-          transform: rotate(180deg); // Rotate 180 degrees
+          transform: rotate(180deg);
         }
       }
 
@@ -79,7 +79,7 @@ section.row-2 {
       height: 1px;
       width: 100%;
       margin: 5px 0 20px 0;
-      background: $border-primary;
+      background: var(--border-primary);
     }
 
     .exchange-calculator .amounts {
@@ -102,7 +102,7 @@ section.row-2 {
       border-radius: 6px;
       background: var(--gradient-primary);
       box-shadow: var(--c-box-shadow-btn);
-      color: var(--c-text-active);
+      // color: var(--c-text-active);
     }
     button {
       background: transparent;
@@ -127,7 +127,7 @@ section.row-2 {
       border-radius: 6px;
       background: linear-gradient(180deg, #73a8f8 0%, #3a57e8 100%);
       box-shadow: 0px 21px 27px -10px rgba(58, 87, 232, 0.3);
-      color: #fff;
+      color: var(--white);
     }
   }
 
@@ -135,61 +135,50 @@ section.row-2 {
     h2 {
       font-size: 15px;
       font-weight: 500;
-      color: white;
+      color: var(--white);
       margin-bottom: 15px;
       span {
-        color: #9baeca;
+        color: var(--text-color);
       }
     }
 
- 
-    
-    
     .txt-bottom-container {
-     position: relative;
-    //  margin-top: 50px;
-    padding-top: 10px;
-     z-index: 10;
-     font-weight: 500;
-     margin-top: 30px;
-    //  border: 1px solid;
+      position: relative;
+      //  margin-top: 50px;
+      padding-top: 10px;
+      z-index: 10;
+      font-weight: 500;
+      margin-top: 30px;
+      //  border: 1px solid;
 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
 
-    h4:nth-of-type(2),
-    h4:nth-of-type(4) {
-      font-size: 18px; 
+      h4:nth-of-type(2),
+      h4:nth-of-type(4) {
+        font-size: 18px;
+      }
+
+      img {
+        position: absolute;
+        bottom: -20px;
+        right: -1px;
+        color: var(--text-color);
+        opacity: 0.1;
+        // width: 100%;
+        // border: 1px solid;
+      }
+
+      .c-text-sec {
+        margin-top: 10px;
+        line-height: 30px;
+        color: var(--text-color);
+        font-size: 20px;
+      }
     }
-
-     img {
-      position: absolute;
-      bottom: -20px;
-      right: -1px;
-      color: #9baeca ;
-      opacity: .1;
-      // width: 100%;
-      // border: 1px solid;
   }
-
-  .c-text-sec{
-    margin-top: 10px;
-    line-height: 30px;
-    color: $text-color;
-    font-size: 20px;
-  }
-    
-
-   }
-
-
-  }
-
-
-
-  
 }
 
 .btn-change-currency {
@@ -206,8 +195,6 @@ section.row-2 {
   border: 1px solid #151429 !important;
   background: linear-gradient(180deg, #73a8f8 0%, #3a57e8 100%) !important;
   box-shadow: 0px 21px 27px -10px rgba(58, 87, 232, 0.3) !important;
-
-
 }
 
 .smart-input {
@@ -222,33 +209,33 @@ section.row-2 {
   box-shadow: 0 3px 10px 4px #7090b014;
 
   input {
-    background-color: $bg-second;
+    background-color: var(--bg-second-color);
     font-size: 20px;
     font-weight: 500;
-    color: white;
+    color: var(--white);
     width: 100%;
 
-    input[type="number"]::-webkit-inner-spin-button,
-    input[type="number"]::-webkit-outer-spin-button {
-      -webkit-appearance: none;
-      margin: 0;
-    }
+    // input[type="number"]::-webkit-inner-spin-button,
+    // input[type="number"]::-webkit-outer-spin-button {
+    //   -webkit-appearance: none;
+    //   margin: 0;
+    // }
   }
 
   .dropdown {
     display: flex;
-    color: white;
+    color: var(--white);
     gap: 7px;
     padding: 10px;
     cursor: pointer;
     position: relative;
 
     .dropdown__icon-arrow {
-      transition: transform 0.3s ease; // Smooth transition for rotation
+      transition: transform 0.3s ease;
     }
 
     .dropdown__icon-arrow.rotated {
-      transform: rotate(180deg); // Rotate 180 degrees
+      transform: rotate(180deg);
     }
   }
 
@@ -295,7 +282,7 @@ section.row-2 {
 
 .amounts {
   font-weight: 400;
-  color: $text-color;
+  color: var(--text-color);
   margin-top: 20px;
 
   .h4-container {
@@ -305,7 +292,7 @@ section.row-2 {
     justify-content: space-between;
 
     h4.green-text {
-      color: $green-light;
+      color: var(--green-light);
 
       margin-right: 10px;
     }

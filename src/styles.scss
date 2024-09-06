@@ -1,3 +1,23 @@
+:root {
+  --bg-primary-color: #0d0d1f;
+  --bg-second-color: #151429;
+  --gradient-primary: linear-gradient(180deg, #73a8f8 0%, #3a57e8 100%);
+  --primary-color: #3498db;
+  --border-primary: rgba(254, 254, 254, 0.05);
+  --b: #fefefe;
+  // $text-color-second: #9baeca;
+  --text-color: #9baeca;
+  --green-light: #00bc84;
+  --white: #fff;
+  --d: #fefefe;
+  --e: rgba(254, 254, 254, 0.5);
+  --f: #0d0d1f;
+  --g: #151429;
+  --g: #0d0d1f;
+  --h: rgba(232, 232, 240, 0.479);
+  --i: #151429;
+}
+
 /* Global Variables */
 $bg-primary: #0d0d1f;
 $bg-second: #151429;
@@ -20,8 +40,6 @@ $i: #151429;
 
 /* Global styles */
 body {
-
-
   .light-theme {
     background-color: white;
     color: black;
@@ -36,7 +54,6 @@ body {
   .dark-theme {
     background-color: $bg-primary;
     color: white;
-
 
     * {
       background-color: inherit;
@@ -96,17 +113,11 @@ body {
   //   background-color: $bg-primary;
   //   color: white;
 
-
   //   * {
   //     background-color: inherit;
   //     color: inherit;
   //   }
   // }
-
-
-
-
-
 }
 
 /* Reset styles */
