@@ -61,9 +61,16 @@
   color: white;
   height: auto;               
   overflow: unset;  
+  width: 100%;
 
   h2 {
     font-size: 28px;
     margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    margin-left: 0;
   }
 }

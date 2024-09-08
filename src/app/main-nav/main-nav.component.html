@@ -99,7 +99,7 @@
     </div>
   </div>
   <div class="header-mobile">
-    <div>
+    <div class="logo-container">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -136,7 +136,15 @@
     </div>
     <button>
       <div class="menu-link-wrapper">
-        <div class="menu-link"><span class="lines"></span></div>
+        <div class="menu-link">
+          <img
+            (click)="toggleMenu()"
+            src="/images/menu.png"
+            width="35px"
+            height="35px"
+            alt="handburger icon"
+          />
+        </div>
       </div>
     </button>
   </div>

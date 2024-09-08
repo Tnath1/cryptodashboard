@@ -71,3 +71,28 @@ section {
    
   }
 }
+
+
+@media (max-width: 800px) {
+  section {
+    border: 1px soid red;
+    // background-color: rgb(167, 160, 160);
+    grid-template: repeat(2, auto) / 1fr 1fr;
+  
+ 
+
+  
+  }
+}
+
+@media (max-width: 480px) {
+  section {
+    // border: 1px soid red;
+    // background-color: rgb(167, 160, 160);
+    grid-template: repeat(4, auto) / 1fr;
+  
+ 
+
+  
+  }
+}
