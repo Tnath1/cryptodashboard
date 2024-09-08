@@ -5,11 +5,8 @@ section.row-2 {
   grid-template: 1fr / auto repeat(4, minmax(164px, 200px));
   gap: 24px;
   width: 100%;
+  // min-width: 352;
   margin-top: 45px;
-  padding-right: 0px;
-  .box {
-    border: 1px solid var(--border-primary);
-  }
 
   .exchange-calculator {
     min-width: 352px;
@@ -19,7 +16,7 @@ section.row-2 {
   .box {
     border-radius: 10px;
     background-color: var(--bg-second-color);
-    // box-shadow: var(--c-box-shadow);
+    border: 1px solid var(--border-primary);
     padding: 20px;
   }
 
@@ -28,7 +25,6 @@ section.row-2 {
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       margin-bottom: 20px;
 
       .dropdown {
@@ -296,5 +292,42 @@ section.row-2 {
 
       margin-right: 10px;
     }
+  }
+}
+
+// @media (max-width: 480px) {
+//   section.row-2 {
+//     display: grid;
+//     width: 100%;
+//     grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+//     background-color: red;
+//   }
+// }
+
+@media (480px <= width <= 768px) {
+  section.row-2 {
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    grid-template: repeat(3, 1fr) / repeat(2, minmax(0, 1fr));
+
+    gap: 24px;
+    width: 100%;
+    margin-top: 45px;
+    .exchange-calculator {
+      grid-column: span 2;
+    }
+
+    .box {
+      padding: 18px 17px;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  section.row-2 {
+    // border: 1px solid white;
+    grid-template: repeat(5, 1fr) / minmax(0, 1fr);
+    
+
+
   }
 }

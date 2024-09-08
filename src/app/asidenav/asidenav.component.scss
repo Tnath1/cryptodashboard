@@ -6,10 +6,8 @@
   height: 100vh;
   background-color: $bg-second;
   border-right: 1px solid $border-primary;
-
-
-
-
+  transition: transform 0.5s, width 0.5s;
+  z-index: 10000;
 
   .light-theme {
     background-color: white;
@@ -22,16 +20,15 @@
     color: white;
   }
 
-  .menu .children-collapse>div {
+  .menu .children-collapse > div {
     overflow: hidden;
-}
+  }
 
   .menu .children-collapse {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows .3s;
-}
-
+    transition: grid-template-rows 0.3s;
+  }
 
   .menu .children-container a {
     display: flex;
@@ -40,57 +37,53 @@
     padding: 3px 0 3px 25px;
     margin: 0;
     border-radius: 6px;
-    text-shadow: 0 21px 27px -10px rgba(40, 21, 4, .2);
-}
+    text-shadow: 0 21px 27px -10px rgba(40, 21, 4, 0.2);
+  }
 
-.menu__submenu>div a {
+  .menu__submenu > div a {
     padding: 5px 0 5px 60px;
     border-radius: 10px;
     color: var(--c-text-second);
     cursor: pointer;
-}
-a {
+  }
+  a {
     color: inherit;
     text-decoration: none;
-}
+  }
 
-// inner
-
+  // inner
 
   .menu .children-container:first-child {
     margin-top: 10px;
-}
-.menu .children-container {
+  }
+  .menu .children-container {
     display: flex;
     flex-direction: column;
     margin: 4px 0 0;
     padding: 0;
-}
+  }
 
-// .menu .divider {
-//     margin-top: 15px;
-//     width: calc(100% - 30px);
-// }
+  // .menu .divider {
+  //     margin-top: 15px;
+  //     width: calc(100% - 30px);
+  // }
 
-
-//main
+  //main
   .menu {
-
-    
-.divider {
-    margin-top: 15px;
-    width: calc(100% - 30px);
-    border: 1px solid $border-primary;
-}
-    .menu__submenu {
-        display: grid;
-        grid-template-rows: 0fr;
-        transition: grid-template-rows .3s, margin .3s;
+    .divider {
+      margin-top: 15px;
+      width: calc(100% - 30px);
+      border: 1px solid $border-primary;
     }
-    .menu__submenu>div {
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
+    .menu__submenu {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: grid-template-rows 0.3s, margin 0.3s;
+    }
+    .menu__submenu > div {
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
     }
 
     .menu__name {
@@ -120,25 +113,24 @@ a {
         justify-content: center;
         align-items: center;
         width: 24px;
-    }
+      }
 
-    h4 {
+      h4 {
         min-width: fit-content;
         margin: 0 auto 0 16px;
         font-weight: 400;
         color: $text-color;
         flex-basis: 120px;
-    }
+      }
 
-    .menu__count-submenu {
+      .menu__count-submenu {
         position: absolute;
         left: 198px;
         font-weight: 400;
         color: $text-color;
         text-align: center;
         width: 10px;
-    }
-
+      }
     }
 
     a {
@@ -153,4 +145,19 @@ a {
   width: 100%;
   height: 100%;
   padding: 14px 14px 100px;
+}
+
+@media (max-width: 1024px) {
+  div.sidebar {
+    transform: translate(-100%) !important;
+    // background-color: aqua;
+    transition: transform 0.4s ease;
+  }
+  .open {
+    transform: translate(0) !important;
+    // background-color: aqua;
+    transition: transform 0.5s ease-in-out;
+  }
+
+ 
 }

@@ -52,7 +52,7 @@ section.box {
     grid-template-rows: 0fr;
     transition: all 0.5s;
 
-    .cards{
+    .cards {
       display: flex;
       align-items: center;
       gap: 10px;
@@ -77,37 +77,29 @@ section.box {
         );
       }
 
-      
-
-
-
       .slider-credit-cards__lightout-gradient-right {
         right: -10px;
-        background: linear-gradient(270deg,    rgb(21, 20, 41),
-        rgba(21, 20, 41, 0));
-    }
-    
-     .slider-credit-cards__lightout-gradient-right {
+        background: linear-gradient(
+          270deg,
+          rgb(21, 20, 41),
+          rgba(21, 20, 41, 0)
+        );
+      }
+
+      .slider-credit-cards__lightout-gradient-right {
         position: absolute;
         bottom: 0;
         width: 120px;
         height: 154px;
         z-index: 999;
-    }
-
-
-
-
-
+      }
 
       .card-container {
         display: flex;
         align-items: center;
-       
-          // min-width: 250px;
-          // margin-right: 10px;
-        
-        
+
+        // min-width: 250px;
+        // margin-right: 10px;
 
         // .slick-slide {
         //   // border: 1px solid white;
@@ -182,5 +174,12 @@ section.box {
     outline: none;
     border: 0px;
     font-family: inherit;
+  }
+}
+
+@media (max-width: 800px) {
+  section.box {
+    // overflow-y: hidden;
+    // scrollbar-width: auto;
   }
 }

@@ -12,26 +12,26 @@ main.container {
   font-family: "Poppins" sans-serif;
   // padding: 20px;
 
-  .light-theme {
-    background-color: white;
-    color: black;
+  // .light-theme {
+  //   background-color: white;
+  //   color: black;
 
-    * {
-      background-color: inherit;
-      color: inherit;
-    }
-  }
+  //   * {
+  //     background-color: inherit;
+  //     color: inherit;
+  //   }
+  // }
 
-  /* Dark Theme */
-  .dark-theme {
-    background-color: $bg-primary;
-    color: white;
+  // /* Dark Theme */
+  // .dark-theme {
+  //   background-color: $bg-primary;
+  //   color: white;
 
-    * {
-      background-color: inherit;
-      color: inherit;
-    }
-  }
+  //   * {
+  //     background-color: inherit;
+  //     color: inherit;
+  //   }
+  // }
 
   div.app-content {
 
