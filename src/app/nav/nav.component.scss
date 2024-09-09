@@ -1,4 +1,4 @@
-@import "../../styles.scss";
+// @import "../../styles.scss";
 
 // div.h {
 //   margin: 0;
@@ -17,25 +17,22 @@
   width: 286px;
   height: 75px;
   padding: 17px 12px 17px 32px;
-  border-bottom: 1px solid $border-primary;
-  border-right: 1px solid $border-primary;
-  transition: padding .2s, overflow .2s, width .2s;
+  border-bottom: 1px solid var( --border-primary);
+  border-right: 1px solid var( --border-primary);
+  transition: padding 0.2s, overflow 0.2s, width 0.2s;
   cursor: pointer;
-color: white;
-  .logo-text{
+  color: var(--white);
+  .logo-text {
     display: flex;
     align-items: center;
     gap: 25px;
   }
 
-   .logo-btn{
+  .logo-btn {
     width: 25px;
     height: 25px;
-    background: $bg-primary;
+    background: var( --bg-primary-color);
     border-radius: 4px;
     border: none;
-    
-   }
-  
-    
+  }
 }
