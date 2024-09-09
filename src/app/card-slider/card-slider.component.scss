@@ -1,9 +1,9 @@
-@import "../../styles.scss";
+// @import "../../styles.scss";
 
 section.box {
   margin-top: 40px;
   border-radius: 10px;
-  background: $bg-second;
+  background: var( --bg-second-color);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
   padding: 20px;
   // overflow-y: hidden;
@@ -26,7 +26,7 @@ section.box {
         width: 28px;
         height: 28px;
         border-radius: 5px;
-        background: $bg-second;
+        background: var( --bg-second-color);
         border: 1px solid rgba(254, 254, 254, 0.05);
         box-shadow: 0 3px 10px 4px #7090b014;
       }
@@ -38,7 +38,7 @@ section.box {
 
     height: 1px;
     width: 100%;
-    background: $border-primary;
+    background: var( --border-primary);
   }
 
   //cards
@@ -72,8 +72,8 @@ section.box {
         left: -10px;
         background: linear-gradient(
           90deg,
-          rgb(21, 20, 41),
-          rgba(21, 20, 41, 0)
+          var( --gradient-primary)
+        var( --gradient-secondary)
         );
       }
 
@@ -81,8 +81,8 @@ section.box {
         right: -10px;
         background: linear-gradient(
           270deg,
-          rgb(21, 20, 41),
-          rgba(21, 20, 41, 0)
+          var( --gradient-primary)
+          var( --gradient-secondary)
         );
       }
 
@@ -117,7 +117,7 @@ section.box {
           background-repeat: no-repeat;
           background-position: center;
           background-size: cover;
-          border: 1px solid white;
+          border: 1px solid var(--white);
           div.imvg {
             display: flex;
             align-items: center;
@@ -149,7 +149,7 @@ section.box {
     margin-top: 30px;
     width: 100%;
     padding: 13px 0;
-    background: $border-primary;
+    background: var( --bg-primary-color);
     // background-clip: text;
     // -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -177,9 +177,9 @@ section.box {
   }
 }
 
-@media (max-width: 800px) {
-  section.box {
-    // overflow-y: hidden;
-    // scrollbar-width: auto;
-  }
-}
+// @media (max-width: 800px) {
+//   section.box {
+//     // overflow-y: hidden;
+//     // scrollbar-width: auto;
+//   }
+// 

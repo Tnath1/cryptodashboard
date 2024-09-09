@@ -1,4 +1,4 @@
-@import "../../styles.scss";
+// @import "../../styles.scss";
 
 // .content {
 //   overflow-x: hidden;
@@ -33,20 +33,20 @@
   overflow-x: hidden;
   max-width: 1154px;
   margin-left: 286px;
-  background-color: $bg-primary;
+  background-color: var( --bg-primary-color);
   height: 100vh;  
   max-height: 100vh;  
 
 
   .light-theme {
-    background-color: white ;
+    background-color: var(--white) ;
     color: black ;
   }
 
   /* Dark Theme */
   .dark-theme {
-    background-color: $bg-primary;
-    color: white;
+    background-color: var( --bg-primary-color);
+    color: var(--white);
   }
 
 
@@ -58,7 +58,7 @@
 
 .container {
   margin-top: 6.5rem;
-  color: white;
+  color: var(--white);
   height: auto;               
   overflow: unset;  
   width: 100%;

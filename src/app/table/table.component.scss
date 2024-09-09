@@ -1,4 +1,4 @@
-@import "../../styles.scss";
+// @import "../../styles.scss";
 
 .transactions {
   margin-top: 40px;
@@ -15,13 +15,13 @@
 
     .box {
       border-radius: 10px;
-      background: $bg-second;
+      background: var(--bg-second-color);
       box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
       padding: 20px;
       margin-top: 5px;
     }
     td:nth-child(3) {
-      color: #3290ff;
+      color: var(--blue-primary);
       margin-left: 25px;
 
       a {
@@ -31,7 +31,7 @@
     }
 
     td:nth-child(2) {
-      color: #3290ff;
+      color: var(--blue-primary);
       margin-left: 15px;
     }
 
@@ -44,8 +44,6 @@
         minmax(150px, 400px) minmax(70px, 400px) minmax(130px, 400px)
         minmax(100px, 400px);
       align-items: center;
-
-   
 
       .status-days {
         display: flex;
@@ -73,9 +71,9 @@
             width: fit-content;
             height: 17px;
             border-radius: 1px;
-            background: #0d0d1f;
+            background: var(--bg);
             padding: 0 4px;
-            color: #fefefe;
+            color: var(--d);
           }
         }
       }
@@ -100,7 +98,7 @@
           }
 
           span {
-            color: $text-color;
+            color: var(--text-color);
           }
         }
       }
@@ -134,7 +132,7 @@
         display: table-header-group;
         vertical-align: middle;
         unicode-bidi: isolate;
-        border-color: $border-primary;
+        border-color: var(--border-primary);
 
         tr {
           padding: 19px 0;
@@ -143,7 +141,7 @@
 
         .box {
           border-radius: 10px;
-          background: $bg-second;
+          background: var(--bg-second-color);
           box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
           padding: 20px;
         }
