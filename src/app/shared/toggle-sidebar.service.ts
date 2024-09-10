@@ -13,4 +13,7 @@ export class SidenavService {
     this.sidenavOpenSubject.next(!currentState); 
     // console.log('Toggling sidenav, new state:', !currentState); 
   }
+
+
+  
 }
