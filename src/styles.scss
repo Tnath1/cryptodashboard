@@ -26,6 +26,7 @@
 }
 
 .light-theme {
+  --border-primary: #d3d3d4;
   --bg-track: #d3d3d4;
   --d: #1b1b1b;
   --bg:#fff;
@@ -42,6 +43,7 @@
 }
 
 .dark-theme {
+  --border-primary: rgba(254, 254, 254, 0.05);
   --bg-track: #151429;
   --d: #fefefe;
   --bg:#0d0d1f;
