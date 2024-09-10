@@ -1,55 +1,28 @@
-// @import "../../styles.scss";
-
-// .content {
-//   overflow-x: hidden;
-//   // width: 100%;
-//   max-width: 1154px;
-//   margin-left: 286px;
-//   background-color: $bg-primary;
-//   height: 100vh;
-
-
-//   div.main-content {
-//     padding: 0 24px 50px;
-
-
-//     div.container {
-//       margin-top: 6.5rem;
-//       color: white;
-
-   
-//       h2 {
-//         font-size: 28px;
-//         margin-bottom: 25px;
-//       }
-//     }
-//   }
-// }
-
-
-
 .content {
   // overflow-y: auto;
   overflow-x: hidden;
   max-width: 1154px;
   margin-left: 286px;
-  background-color: var( --bg-primary-color);
-  height: 100vh;  
-  max-height: 100vh;  
+  background-color: var(--bg-primary-color);
+  height: 100vh;
+  max-height: 100vh;
+  transition: filter 0.2s ease;
 
 
   .light-theme {
-    background-color: var(--white) ;
-    color: black ;
+    background-color: var(--white);
+    color: black;
   }
 
   /* Dark Theme */
   .dark-theme {
-    background-color: var( --bg-primary-color);
+    background-color: var(--bg-primary-color);
     color: var(--white);
   }
+}
 
-
+.blur {
+  filter: blur(7px); // Blur effect when the class is applied
 }
 
 .main-content {
@@ -59,8 +32,8 @@
 .container {
   margin-top: 6.5rem;
   color: var(--white);
-  height: auto;               
-  overflow: unset;  
+  height: auto;
+  overflow: unset;
   width: 100%;
 
   h2 {
